@@ -10,7 +10,7 @@ app.use(cors())
 
 app.get('/', (req, res) => {
   res.send('Hello World')
-  pool.query('SELECT * FROM public.users', (error, result) => {
+  pool.query('SELECT * FROM public.tasks', (error, result) => {
     if (error) {
       console.log(error)
     }
